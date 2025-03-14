@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quán Cafe Ấm Áp</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #8B4513; color: white; text-align: center; padding: 10px; }
-        nav { display: flex; justify-content: center; background: #D2B48C; padding: 10px; }
-        nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
-        section { padding: 20px; max-width: 800px; margin: auto; }
-        .menu-item { display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid #ccc; }
-        .menu-detail { display: flex; align-items: center; margin-top: 10px; }
-        .menu-detail img { width: 100px; height: 100px; border-radius: 5px; margin-right: 10px; }
-        .reviews img { width: 100px; border-radius: 5px; margin-right: 10px; }
-        .review-item { display: flex; align-items: center; margin-bottom: 15px; }
-        footer { background: #8B4513; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #FAF3E0; color: #5C4033; }
+        header { background: #8B4513; color: white; text-align: center; padding: 20px; }
+        nav { display: flex; justify-content: center; background: #D2B48C; padding: 15px; }
+        nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        nav a:hover { color: #5C4033; }
+        section { padding: 20px; max-width: 800px; margin: auto; background: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 20px; }
+        h2 { border-bottom: 2px solid #8B4513; padding-bottom: 5px; }
+        .menu-item { display: flex; justify-content: space-between; padding: 20px; border-bottom: 3px solid #8B4513; background: #F5DEB3; border-radius: 10px; font-size: 20px; font-weight: bold; margin-top: 40px; text-transform: uppercase; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+        .menu-detail { display: flex; align-items: center; background: #FFE4C4; padding: 30px; border-radius: 15px; box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); margin-top: 15px; }
+        .menu-detail img { width: 300px; height: 300px; border-radius: 15px; margin-right: 25px; transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+        .menu-detail img:hover { transform: scale(1.15); box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); }
+        footer { background: #8B4513; color: white; text-align: center; padding: 20px; margin-top: 30px; font-size: 18px; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -29,11 +30,11 @@
         <a href="#menu">Menu</a>
         <a href="#reviews">Ảnh & Review</a>
     </nav>
-    
+
     <section id="gioithieu">
         <h2>Giới Thiệu</h2>
-        <img src="cafe.jpg" alt="Hình ảnh quán" width="100%">
-        <p>📍 Địa chỉ: Trường chuyên vngvng</p>
+        <img src="https://imgur.com/zHZLarg.jpg" alt="Hình ảnh quán" width="100%">
+        <p>📍 Địa chỉ: 123 Đường Cà Phê, Quận 1, TP.HCM</p>
         <p>📞 Liên hệ: <a href="https://www.facebook.com/lilovemeee/">Facebook</a></p>
         <p>🕒 Giờ mở cửa: 7h - 22h hàng ngày</p>
     </section>
@@ -42,22 +43,22 @@
         <h2>Menu</h2>
         <div class="menu-item"><span>☕ Cà phê đen</span> <span>30.000đ</span></div>
         <div class="menu-detail">
-            <img src="black-coffee.jpg" alt="Cà phê đen">
+            <img src="https://imgur.com/dVmLyx2.jpg" alt="Cà phê đen">
             <p>Cà phê đen nguyên chất, đậm đà và thơm ngon.</p>
         </div>
         <div class="menu-item"><span>🥛 Cà phê sữa</span> <span>35.000đ</span></div>
         <div class="menu-detail">
-            <img src="milk-coffee.jpg" alt="Cà phê sữa">
+            <img src="https://imgur.com/VptuSqE.jpg" alt="Cà phê sữa">
             <p>Sự kết hợp hoàn hảo giữa cà phê đậm vị và sữa đặc ngọt ngào.</p>
         </div>
         <div class="menu-item"><span>🍵 Trà xanh</span> <span>25.000đ</span></div>
         <div class="menu-detail">
-            <img src="green-tea.jpg" alt="Trà xanh">
+            <img src="https://imgur.com/p4dVWed.jpg" alt="Trà xanh">
             <p>Trà xanh tươi mát, giúp giải nhiệt và thư giãn.</p>
         </div>
         <div class="menu-item"><span>🥤 Sinh tố xoài</span> <span>40.000đ</span></div>
         <div class="menu-detail">
-            <img src="mango-smoothie.jpg" alt="Sinh tố xoài">
+            <img src="https://imgur.com/wYO1RIR.jpg" alt="Sinh tố xoài">
             <p>Sinh tố xoài tươi ngon, giàu vitamin và bổ dưỡng.</p>
         </div>
     </section>
@@ -65,11 +66,11 @@
     <section id="reviews">
         <h2>Ảnh & Review</h2>
         <div class="review-item">
-            <img src="coffee-cup.jpg" alt="Cà phê ngon">
+            <img src="https://imgur.com/HvFVOkw.jpg" alt="Cà phê ngon">
             <p>"Cà phê rất thơm, không gian ấm cúng!" - Minh</p>
         </div>
         <div class="review-item">
-            <img src="green-tea.jpg" alt="Trà xanh mát lạnh">
+            <img src="https://imgur.com/wvuEsJH.jpg" alt="Trà xanh mát lạnh">
             <p>"Trà xanh rất mát, uống xong tỉnh cả người!" - Lan</p>
         </div>
     </section>
